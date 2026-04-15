@@ -1,4 +1,4 @@
-export default function responsiveDesign(){
+export default function ResponsiveDesign(){
     return (
         <div>
             <ResponsiveText/>
@@ -55,7 +55,11 @@ function ResponsiveLayout(){
                 <div class="bg-blue-500 p-4">Box 1</div>
                 <div class="bg-blue-500 p-4">Box 2</div>
                 <div class="bg-blue-500 p-4">Box 3</div>
-                <div class="bg-blue-500 p-4">Box 4</div>
+                <div class="bg-blue-500 p-4">Box 5</div>
+                <div class="bg-blue-500 p-4">Box 6</div>
+                <div class="bg-blue-500 p-4">Box 7</div>
+                <div class="bg-blue-500 p-4">Box 8</div>
+                <div class="bg-blue-500 p-4">Box 9</div>
             </div>
         </div>
     )
