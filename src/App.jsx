@@ -14,6 +14,8 @@ import Forgot from "./pages/Forgot";
 import Loading from "./components/Loading";
 import React from "react";
 import { Suspense } from "react";
+const Guest = React.lazy(() => import("./pages/Guest"));
+import GuestLayout from "./layout/GuestLayout";
 function App() {
   return (
     <Suspense fallback={<Loading />}>
@@ -29,6 +31,10 @@ function App() {
             <Route path="/register" element={<Register/>} />
             <Route path="/forgot" element={<Forgot/>} />
         </Route>
+        <Route element={<GuestLayout />}>
+          <Route path="/guest" element={<Guest />} />
+        </Route>
+        <Route path="*" element={<NotFound />} />
         </Routes>
     </Suspense>
   )
