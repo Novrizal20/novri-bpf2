@@ -1,26 +1,36 @@
 import "./assets/tailwind.css";
-import Sidebar from "./layout/Sidebar";
-import Header from "./layout/Header";
-import Dashboard from "./pages/Dashboard";
+import Sidebar from "./components/Sidebar";
+import Header from "./components/Header";
+import AuthLayout from "./layout/AuthLayout";
+const Dashboard = React.lazy(() => import("./pages/Dashboard"))
 import { Route, Routes } from "react-router-dom";
 import Orders from "./pages/Orders";
 import Customers from "./pages/Customers";
 import NotFound from "./pages/NotFound";
+import MainLayout from "./layout/MainLayout";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Forgot from "./pages/Forgot";
+import Loading from "./components/Loading";
+import React from "react";
+import { Suspense } from "react";
 function App() {
   return (
-    <div id="app-container" className="bg-gray-100 min-h-screen flex">
-      <Sidebar />
-      <div id="main-content" className="flex-1 p-4">
-        <Header />
+    <Suspense fallback={<Loading />}>
         <Routes>
-          <Route path="*" element={<NotFound />} />
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/orders" element={<Orders />} />
-          <Route path="/customers" element={<Customers />} />
+          <Route element={<MainLayout/>}>
+            <Route path="*" element={<NotFound />} />
+            <Route path="/" element={<Dashboard />} />
+            <Route path="orders" element={<Orders />} />
+            <Route path="customers" element={<Customers />} />
+          </Route>
+          <Route element={<AuthLayout/>}>
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register/>} />
+            <Route path="/forgot" element={<Forgot/>} />
+        </Route>
         </Routes>
-      </div>
-    </div>
-  );
+    </Suspense>
+  )
 }
-
 export default App;
