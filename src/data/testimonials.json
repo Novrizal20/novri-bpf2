@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "name": "Andi Saputra",
+    "avatar": "/img/people/satu.jpg",
+    "review": "Makanannya enak banget dan pengirimannya cepat. Recommended!"
+  },
+
+  {
+    "id": 2,
+    "name": "Siti Aulia",
+    "avatar": "/img/people/dua.jpg",
+    "review": "Tampilan aplikasinya modern dan sangat mudah digunakan."
+  },
+
+  {
+    "id": 3,
+    "name": "Budi Pratama",
+    "avatar": "/img/people/tiga.jpg",
+    "review": "Pilihan menunya banyak dan harga masih terjangkau untuk mahasiswa."
+  },
+
+  {
+    "id": 4,
+    "name": "Rina Marlina",
+    "avatar": "/img/people/emmpat.jpg",
+    "review": "Promo yang diberikan sangat menarik dan sering ada diskon."
+  },
+
+  {
+    "id": 5,
+    "name": "Fajar Nugroho",
+    "avatar": "/img/people/lima.jpg",
+    "review": "Pelayanannya cepat dan kualitas makanan tetap terjaga saat sampai."
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Cheese Burger",
+    "price": 25000,
+    "image": "/img/products/burger.png"
+  },
+
+  {
+    "id": 2,
+    "name": "Pepperoni Pizza",
+    "price": 55000,
+    "image": "/img/products/pizza.png"
+  },
+
+  {
+    "id": 3,
+    "name": "Fresh Orange Juice",
+    "price": 18000,
+    "image": "/img/products/drink.png"
+  },
+
+  {
+    "id": 4,
+    "name": "French Fries",
+    "price": 15000,
+    "image": "/img/products/fries.png"
+  }
+]
