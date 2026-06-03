@@ -3,7 +3,7 @@ import { FcCustomerSupport } from "react-icons/fc";
 import { BiListCheck } from "react-icons/bi";
 import { AiFillDashboard } from "react-icons/ai";
 import { Link, NavLink } from "react-router-dom";
-
+import { MdFastfood } from "react-icons/md";
 export default function Sidebar() {
   const menuClass = ({ isActive }) =>
     `flex cursor-pointer items-center rounded-xl p-4  space-x-2
@@ -37,33 +37,27 @@ export default function Sidebar() {
       <div id="sidebar-menu" className="mt-10">
         <ul id="menu-list" className="space-y-3">
           <li>
-            <NavLink
-              id="menu-1"
-              to="/"
-              className={menuClass}
-            >
+            <NavLink id="menu-1" to="/" className={menuClass}>
               <AiFillDashboard className="mr-4 text-xl" />
               Dashboard
             </NavLink>
           </li>
           <li>
-            <NavLink
-              id="menu-2"
-              to="/orders"
-              className={menuClass}
-            >
+            <NavLink id="menu-2" to="/orders" className={menuClass}>
               <BiFoodMenu className="mr-4 text-xl" />
               Pemesanan Menu
             </NavLink>
           </li>
           <li>
-            <NavLink
-              id="menu-3"
-              to="/customers"
-              className={menuClass}
-            >
+            <NavLink id="menu-3" to="/customers" className={menuClass}>
               <FcCustomerSupport className="mr-4 text-xl" />
               Customers
+            </NavLink>
+          </li>
+          <li>
+            <NavLink id="menu-4" to="/products" className={menuClass}>
+              <MdFastfood className="mr-4 text-xl" />
+              Products
             </NavLink>
           </li>
         </ul>
@@ -87,14 +81,14 @@ export default function Sidebar() {
           <img
             id="footer-avatar"
             className="w-20 rounded-full"
-            src="img/raja.png"
+            src="public/img/profile.png"
           />
         </div>
         <span id="footer-brand" className="font-bold text-gray-400">
           Sedap Restaurant Admin Dashboard
         </span>
         <p id="footer-copyright" className="font-light text-gray-400">
-          &copy; 2025 All Right Reserved
+          &copy; 2026 All Right Reserved
         </p>
       </div>
     </div>

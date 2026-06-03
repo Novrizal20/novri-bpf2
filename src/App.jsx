@@ -12,9 +12,11 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Forgot from "./pages/Forgot";
 import Loading from "./components/Loading";
+import Products from "./pages/Products";
 import React from "react";
 import { Suspense } from "react";
 const Visitor = React.lazy(() => import("./pages/Visitor"));
+const ProductDetail = React.lazy(() => import("./pages/ProductDetail"))
 import VisitorLayout from "./layout/VisitorLayout";
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
             <Route path="/" element={<Dashboard />} />
             <Route path="orders" element={<Orders />} />
             <Route path="customers" element={<Customers />} />
+            <Route path="products" element={<Products />} />
+            <Route path="/products/:id" element={<ProductDetail />} /> 
           </Route>
           <Route element={<AuthLayout/>}>
             <Route path="/login" element={<Login />} />
