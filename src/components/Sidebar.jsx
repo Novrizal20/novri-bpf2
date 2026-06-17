@@ -60,6 +60,24 @@ export default function Sidebar() {
               Products
             </NavLink>
           </li>
+          <li>
+            <NavLink id="menu-5" to="/notes" className={menuClass}>
+              <AiFillDashboard className="mr-4 text-xl" />
+              Notes
+            </NavLink>
+          </li>
+          <li>
+            <NavLink id="menu-6" to="/register1" className={menuClass}>
+              <AiFillDashboard className="mr-4 text-xl" />
+              Register
+            </NavLink>
+          </li>
+          <li>
+            <NavLink id="menu-7" to="/login1" className={menuClass}>
+              <AiFillDashboard className="mr-4 text-xl" />
+              Login
+            </NavLink>
+          </li>
         </ul>
       </div>
 
@@ -81,7 +99,7 @@ export default function Sidebar() {
           <img
             id="footer-avatar"
             className="w-20 rounded-full"
-            src="public/img/profile.png"
+            src="/img/profile.png"
           />
         </div>
         <span id="footer-brand" className="font-bold text-gray-400">

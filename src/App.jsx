@@ -13,6 +13,9 @@ import Register from "./pages/Register";
 import Forgot from "./pages/Forgot";
 import Loading from "./components/Loading";
 import Products from "./pages/Products";
+import Notes from "./pages/Notes";
+import Register1 from "./pages/Register1";
+import Login1 from "./pages/Login1";
 import React from "react";
 import { Suspense } from "react";
 const Visitor = React.lazy(() => import("./pages/Visitor"));
@@ -30,6 +33,9 @@ function App() {
             <Route path="customers" element={<Customers />} />
             <Route path="products" element={<Products />} />
             <Route path="/products/:id" element={<ProductDetail />} /> 
+            <Route path="notes" element={<Notes />} />
+            <Route path="register1" element={<Register1 />} />
+            <Route path="login1" element={<Login1 />} />
           </Route>
           <Route element={<AuthLayout/>}>
             <Route path="/login" element={<Login />} />
